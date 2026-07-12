@@ -68,22 +68,69 @@
 //Q7. Find the largest and smallest number among these: 42, 7, 95, 13, 67, 28. Do
 //NOT use Math.min or Math.max — use a loop.
 
-let arr = [42, 7, 95, 23, 67, 39];
+// let arr = [42, 7, 95, 23, 67, 39];
 
-let largest = arr[0];
-let smallest = arr[0];
+// let largest = arr[0];
+// let smallest = arr[0];
 
-for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
 
-    if (arr[i] > largest) {
-        largest = arr[i];
-    }
+//     if (arr[i] > largest) {
+//         largest = arr[i];
+//     }
 
-    if (arr[i] < smallest) {
-        smallest = arr[i];
-    }
+//     if (arr[i] < smallest) {
+//         smallest = arr[i];
+//     }
 
-}
+// }
 
-console.log("Largest:", largest);
-console.log("Smallest:", smallest);
+// console.log("Largest:", largest);
+// console.log("Smallest:", smallest);
+
+//Q8. Given a number, check if it's a prime number. Print 'Prime' or 'Not Prime'.
+
+// let n = 13;
+
+// let isPrime = true;
+
+// if (n < 2) {
+//     isPrime = false;
+// } else {
+//     for (let i = 2; i < n; i++) {
+//         if (n % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
+
+// if (isPrime) {
+//     console.log("Prime");
+// } else {
+//     console.log("Not Prime");
+// }
+
+// Q9. Take a sentence and replace every occurrence of the word 'bad' with 'good'.
+// Print the updated sentence.
+
+// let str='bad code bad website'
+// str=str.replaceAll('bad','good')
+// console.log(str);
+//Q10. Print the sum of all digits in a number. For example, for 1234, the answer is
+//1+2+3+4 = 10.
+
+// let num=1234;
+
+// num=num.toString()
+
+// console.log(num);
+
+// console.log(typeof(num));
+// let sum=0;
+
+// for (let i = 0; i <num.length; i++) {
+//     sum=sum+Number(num[i])
+// }
+// console.log(sum);
+
