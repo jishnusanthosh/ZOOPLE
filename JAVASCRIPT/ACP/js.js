@@ -252,20 +252,20 @@
 //Display all prime numbers between 1 and 100.
 
 
-for (let i = 2; i <= 100; i++) {
-    let prime = true;
+// for (let i = 2; i <= 100; i++) {
+//     let prime = true;
 
-    for (let j = 2; j < i; j++) {
-        if (i % j === 0) {
-            prime = false;
-            break;
-        }
-    }
+//     for (let j = 2; j < i; j++) {
+//         if (i % j === 0) {
+//             prime = false;
+//             break;
+//         }
+//     }
 
-    if (prime) {
-        console.log(i);
-    }
-}
+//     if (prime) {
+//         console.log(i);
+//     }
+// }
 
 
 //Activity 23: Armstrong Number Checker
