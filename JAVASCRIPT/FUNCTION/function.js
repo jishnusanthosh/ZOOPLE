@@ -36,3 +36,11 @@
 
 // console.log(add());
 
+// const add=(num2,num1)=>{
+//     var sum=num2+num1;
+//     return sum
+// }
+// let result=add(5,6)
+// console.log(result);
+
+
