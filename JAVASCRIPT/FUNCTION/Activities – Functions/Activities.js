@@ -77,3 +77,67 @@
 // }
 
 // console.log(countCharacters("hello"));   
+
+//Activity 8: Multiplication Table Function
+
+
+// function printTable(num) {
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`${num} x ${i} = ${num * i}`);
+//     }
+// }
+
+// printTable(5);
+ 
+
+//Activity 9: Reverse String Function
+// function reverseWord(word) {
+//     let reversed = "";
+
+//     for (let i = word.length - 1; i >= 0; i--) {
+//         reversed += word[i];
+//     }
+
+//     return reversed;
+// }
+
+// console.log(reverseWord("HELLO"));
+
+//Activity 10: Vowel Counter
+
+// function countVowels(word) {
+//     let count = 0;
+
+//     for (let i = 0; i < word.length; i++) {
+//         let ch = word[i].toLowerCase();
+
+//         if (
+//             ch === "a" ||
+//             ch === "e" ||
+//             ch === "i" ||
+//             ch === "o" ||
+//             ch === "u"
+//         ) {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countVowels("HELLO"));      
+
+// function countVowels(word) {
+//     let vowels = "aeiou";
+//     let count = 0;
+
+//     for (let i = 0; i < word.length; i++) {
+//         if (vowels.includes(word[i].toLowerCase())) {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countVowels("HELLO"));
