@@ -27,10 +27,7 @@ a{
 
 /* Images */
 
-img{
-    width:100%;
-    display:block;
-}
+
 .row{
     min-height:100vh;
 }
@@ -80,10 +77,20 @@ img{
 
 /* Stories */
 
+.stories-wrapper{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
 .stories{
+    display:flex;
     overflow-x:auto;
+    scroll-behavior:smooth;
     white-space:nowrap;
-    padding:20px 0;
+    gap:15px;
+    width:100%;
+    padding:15px 45px;
     border-bottom:1px solid #dbdbdb;
 }
 
@@ -94,7 +101,7 @@ img{
 .story{
     min-width:80px;
     cursor:pointer;
-    display:inline-block;
+    flex:0 0 auto;
 }
 
 .story img{
@@ -121,23 +128,49 @@ img{
     font-size:12px;
 }
 
+.story-arrow{
+    position:absolute;
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    cursor:pointer;
+    z-index:100;
+    transition:.3s;
+}
+
+.story-arrow:hover{
+    transform:scale(1.1);
+}
+
+.story-arrow.left{
+    left:5px;
+}
+
+.story-arrow.right{
+    right:5px;
+}
+
+.story-arrow i{
+    font-size:20px;
+}
+
 
 /* suggestions */
 
 
 .suggestions{
-
     position:sticky;
-
     top:30px;
-
 }
 
 
 /* Feed */
 .feed{
-    max-width:470px;
-    margin:auto;
+    width:100%;
+    max-width:100%;
 }
 
 /* Post */
@@ -198,15 +231,10 @@ img{
    DARK MODE
 =========================== */
 
-.dark-mode {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Body */
+.dark-mode,
 .dark-mode body,
 body.dark-mode {
-    background: #000;
+    background-color: #000;
     color: #fff;
 }
 
@@ -246,6 +274,11 @@ body.dark-mode {
 
 .dark-mode .story small {
     color: white;
+}
+
+.dark-mode .story-arrow{
+    background:#262626;
+    color:white;
 }
 
 /* Cards */

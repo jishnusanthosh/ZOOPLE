@@ -1,8 +1,4 @@
-// Toast (init once, reuse everywhere)
-const toastElement = document.getElementById("likeToast");
-const toast = new bootstrap.Toast(toastElement);
 
-// Like Button
 const likeButtons = document.querySelectorAll(".like-btn");
 
 likeButtons.forEach(btn=>{
@@ -17,7 +13,7 @@ likeButtons.forEach(btn=>{
             btn.classList.remove("bi-heart");
             btn.classList.add("bi-heart-fill","text-danger");
             count.innerText = likes + 1;
-            toast.show();
+        
 
         }else{
 
@@ -126,3 +122,19 @@ darkBtn.addEventListener("click", function (e) {
     }
 
 });
+
+const stories = document.getElementById("stories");
+
+document.getElementById("rightBtn").onclick = () => {
+    stories.scrollBy({
+        left:300,
+        behavior:"smooth"
+    });
+};
+
+document.getElementById("leftBtn").onclick = () => {
+    stories.scrollBy({
+        left:-300,
+        behavior:"smooth"
+    });
+};

@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./CSS/responsive.css" />
   </head>
   <body>
-
     <div class="d-lg-none sticky-top bg-white border-bottom p-3">
       <div class="d-flex justify-content-between align-items-center">
         <h4 class="m-0">Instagram</h4>
@@ -85,49 +84,62 @@
         </div>
 
         <!-- Feed -->
-        <div class="col-12 col-lg-6 py-4">
-          <div class="feed mx-auto">
+        <div class="col-12 col-lg-7 py-4">
+          <div class="feed">
             <!-- Stories -->
-            <div class="stories d-flex align-items-center">
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=1" alt="" />
-                <small>jishnu</small>
+            <div class="stories-wrapper">
+              <!-- Left Arrow -->
+              <button class="story-arrow left" id="leftBtn">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+
+              <!-- Stories -->
+              <div class="stories" id="stories">
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=1" />
+                  <small>Jishnu</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=2" />
+                  <small>Alex</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=3" />
+                  <small>Sara</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=4" />
+                  <small>John</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=5" />
+                  <small>Emma</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=6" />
+                  <small>David</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=7" />
+                  <small>Anna</small>
+                </div>
+
+                <div class="story text-center me-3">
+                  <img src="https://i.pravatar.cc/150?img=8" />
+                  <small>Jack</small>
+                </div>
               </div>
 
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=2" alt="" />
-                <small>alex</small>
-              </div>
-
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=3" alt="" />
-                <small>sara</small>
-              </div>
-
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=4" alt="" />
-                <small>john</small>
-              </div>
-
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=5" alt="" />
-                <small>anna</small>
-              </div>
-
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=6" alt="" />
-                <small>emma</small>
-              </div>
-
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=7" alt="" />
-                <small>jack</small>
-              </div>
-
-              <div class="story text-center me-3">
-                <img src="https://i.pravatar.cc/150?img=8" alt="" />
-                <small>david</small>
-              </div>
+              <!-- Right Arrow -->
+              <button class="story-arrow right" id="rightBtn">
+                <i class="bi bi-chevron-right"></i>
+              </button>
             </div>
 
             <div class="card mt-4 border-0 shadow-sm">
@@ -182,7 +194,9 @@
         </div>
 
         <!-- Suggestions -->
-       <div class="col-12 col-lg-3 border-start p-4 d-none d-lg-block suggestions">
+        <div
+          class="col-12 col-lg-3 border-start p-4 d-none d-lg-block suggestions"
+        >
           <div class="d-flex align-items-center mb-4">
             <img
               src="https://i.pravatar.cc/150?img=20"
