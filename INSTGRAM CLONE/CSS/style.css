@@ -7,8 +7,12 @@
 
 /* Body */
 
+
+
+
+
 body{
-    background:#fafafa;
+    background:#000000;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -18,11 +22,10 @@ ul{
     list-style:none;
 }
 
-/* Remove Link Underline */
 
 a{
     text-decoration:none;
-    color:black;
+    color:white;
 }
 
 /* Images */
@@ -32,22 +35,23 @@ a{
     min-height:100vh;
 }
 .col-lg-2:first-child{
-    background:#ffffff;
+    background:#000000;
 }
 
 .col-lg-6{
-    background:#fafafa;
+    background:#000000;
 }
 
 .col-lg-3:last-child{
-    background:#ffffff;
+    background:#000000;
 }
 
 .sidebar {
     height: 100vh;
     position: sticky;
     top: 0;
-    background: #fff;
+    background: #000000;
+  
 }
 .logo {
     font-family: 'Grand Hotel', cursive;
@@ -56,23 +60,20 @@ a{
 }
 .sidebar .nav-link {
     font-size: 18px;
-    padding: 12px 15px;
     border-radius: 10px;
     transition: 0.3s;
     display: flex;
-    align-items: center;
+ 
 }
 .sidebar .nav-link:hover {
-    background: #f2f2f2;
+    background: #535151;
+   
 }
 .sidebar i {
     transition: transform 0.2s;
 }
 .sidebar .nav-link:hover i {
     transform: scale(1.1);
-}
-.sidebar li{
-    margin-bottom:20px;
 }
 
 /* Stories */
@@ -91,7 +92,7 @@ a{
     gap:15px;
     width:100%;
     padding:15px 45px;
-    border-bottom:1px solid #dbdbdb;
+    border-bottom:1px solid #fceeee;
 }
 
 .stories::-webkit-scrollbar{
@@ -164,6 +165,7 @@ a{
 .suggestions{
     position:sticky;
     top:30px;
+    color: aliceblue;
 }
 
 
@@ -176,7 +178,7 @@ a{
 /* Post */
 
 .card{
-    border:1px solid #dbdbdb;
+    border:1px solid #000000;
     border-radius:8px;
     transition:.3s;
 }
@@ -223,149 +225,6 @@ a{
 }
 
 .following{
-    background:#e9ecef !important;
-    color:#000 !important;
-}
-
-/* ===========================
-   DARK MODE
-=========================== */
-
-.dark-mode,
-.dark-mode body,
-body.dark-mode {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Main Sections */
-.dark-mode .container-fluid,
-.dark-mode .row,
-.dark-mode .col-lg-6,
-.dark-mode .col-lg-3,
-.dark-mode .col-6,
-.dark-mode .col-12 {
-    background: #000;
-}
-
-/* Sidebar */
-.dark-mode .sidebar {
-    background: #000;
-}
-
-.dark-mode .logo {
-    color: #fff;
-}
-
-/* Navigation */
-.dark-mode .nav-link {
-    color: #fff !important;
-}
-
-.dark-mode .nav-link:hover {
-    background: #262626;
-}
-
-/* Stories */
-.dark-mode .stories {
-    background: #000;
-    border-bottom: 1px solid #333;
-}
-
-.dark-mode .story small {
-    color: white;
-}
-
-.dark-mode .story-arrow{
-    background:#262626;
-    color:white;
-}
-
-/* Cards */
-.dark-mode .card {
-    background: #121212;
-    color: white;
-    border: 1px solid #333;
-}
-
-.dark-mode .card-header {
-    background: #121212 !important;
-    color: white;
-}
-
-.dark-mode .card-body {
-    background: #121212;
-}
-
-/* Suggestions */
-.dark-mode .text-muted {
-    color: #b0b0b0 !important;
-}
-
-.dark-mode .border-start,
-.dark-mode .border-end,
-.dark-mode .border-top,
-.dark-mode .border-bottom {
-    border-color: #333 !important;
-}
-
-/* Buttons */
-.dark-mode .btn-light {
-    background: #333;
-    color: white;
-    border: none;
-}
-
-.dark-mode .btn-primary {
-    background: #0095f6;
-}
-
-/* Footer */
-.dark-mode footer {
-    background: #000;
-    color: #999;
-}
-
-/* Mobile Header */
-.dark-mode .sticky-top {
-    background: #000 !important;
-    color: white;
-    border-color: #333 !important;
-}
-
-/* Bottom Navbar */
-.dark-mode .navbar {
-    background: #000 !important;
-    border-color: #333 !important;
-}
-
-.dark-mode .navbar i {
-    color: white;
-}
-
-/* Toast */
-.dark-mode .toast {
-    background: #222;
-    color: white;
-}
-
-/* Icons */
-.dark-mode i {
-    color: white;
-}
-
-/* Inputs */
-.dark-mode input {
-    background: #222;
-    color: white;
-    border: 1px solid #333;
-}
-
-.dark-mode input::placeholder {
-    color: #aaa;
-}
-
-/* Links */
-.dark-mode a {
-    color: white;
+    background:#000000 !important;
+    color:#fffafa !important;
 }
