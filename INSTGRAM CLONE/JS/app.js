@@ -7,14 +7,11 @@ likeButtons.forEach(btn=>{
 
         let count = btn.closest(".card").querySelector(".like-count");
         let likes = parseInt(count.innerText);
-
         if(btn.classList.contains("bi-heart")){
-
             btn.classList.remove("bi-heart");
             btn.classList.add("bi-heart-fill","text-danger");
             count.innerText = likes + 1;
         
-
         }else{
 
             btn.classList.remove("bi-heart-fill","text-danger");
@@ -42,7 +39,6 @@ images.forEach(img=>{
             heart.classList.remove("bi-heart");
             heart.classList.add("bi-heart-fill","text-danger");
             count.innerText = parseInt(count.innerText) + 1;
-            toast.show();
         }
 
     });
@@ -95,33 +91,7 @@ followButtons.forEach(btn=>{
 
 });
 
-// Dark Mode
-const darkBtn = document.getElementById("darkModeBtn");
 
-darkBtn.addEventListener("click", function (e) {
-
-    e.preventDefault();
-
-    document.body.classList.toggle("dark-mode");
-
-    // Change moon/sun icon
-    const icon = darkBtn.querySelector("i");
-
-    if (document.body.classList.contains("dark-mode")) {
-
-        icon.classList.remove("bi-moon");
-
-        icon.classList.add("bi-sun");
-
-    } else {
-
-        icon.classList.remove("bi-sun");
-
-        icon.classList.add("bi-moon");
-
-    }
-
-});
 
 const stories = document.getElementById("stories");
 
