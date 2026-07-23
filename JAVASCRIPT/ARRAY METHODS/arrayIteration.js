@@ -158,3 +158,14 @@
 
 // const [,,,,...remaining] = numbers;
 // console.log(remaining);
+
+
+
+
+const frontend = ["HTML","CSS"];
+
+const backend = ["Node","Express"];
+
+const fullstack = [...frontend,...backend];
+
+console.log(fullstack);
